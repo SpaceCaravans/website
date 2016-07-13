@@ -1,0 +1,60 @@
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', cursive; }
+
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 50%; }
+  .logo > img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s; }
+
+.section {
+  padding: 5rem 0 5rem;
+  text-align: center; }
+
+.darksection {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px; }
+
+@keyframes composelogo_text {
+  0% {
+    opacity: 0;
+    transform: rotate(-10deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg); } }
+
+#img_text {
+  opacity: 0;
+  transform: rotate(-10deg);
+  animation-name: composelogo_text;
+  animation-delay: 0.5s; }
+
+@keyframes composelogo_van {
+  0% {
+    opacity: 0;
+    transform: translateX(-25%) translateY(20%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) translateY(0%); } }
+
+#img_van {
+  opacity: 0;
+  transform: translateX(-25%) translateY(20%);
+  animation-name: composelogo_van;
+  animation-delay: 0.3s; }
+
+/*# sourceMappingURL=app.css.map */
